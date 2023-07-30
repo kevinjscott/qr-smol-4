@@ -1,0 +1,68 @@
+.QRGenerator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 2rem;
+  max-width: 800px;
+}
+
+.QRGenerator .qr-code-container {
+  position: relative;
+  margin-top: 2rem;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+.QRGenerator .input-fields {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.QRGenerator .input-fields input,
+.QRGenerator .input-fields select {
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.QRGenerator .image-selector {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.QRGenerator .image-selector button {
+  padding: 0.5rem;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.QRGenerator .image-selector button.selected {
+  border: 2px solid #0070f3;
+}
+
+@media (max-width: 600px) {
+  .QRGenerator {
+    padding: 1rem;
+  }
+
+  .QRGenerator .qr-code-container {
+    width: 100%;
+  }
+
+  .QRGenerator .image-selector {
+    flex-direction: column;
+  }
+
+  .QRGenerator .image-selector button {
+    margin-bottom: 1rem;
+  }
+}

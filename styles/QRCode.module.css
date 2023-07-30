@@ -1,0 +1,18 @@
+.qrCodeContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+.qrCode {
+  max-width: 100%;
+  height: auto;
+}
+
+.caption {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  color: #333;
+}
