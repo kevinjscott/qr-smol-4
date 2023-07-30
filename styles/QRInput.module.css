@@ -1,0 +1,40 @@
+.input-fields {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.input-fields label {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.input-fields input,
+.input-fields select {
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.input-fields button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #0070f3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.input-fields button:hover {
+    background-color: #0051bb;
+}
+
+@media (max-width: 600px) {
+    .input-fields {
+        width: 100%;
+    }
+}
